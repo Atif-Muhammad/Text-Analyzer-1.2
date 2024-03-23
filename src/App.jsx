@@ -16,12 +16,12 @@ function App() {
   return (
     <ThemeState>
         <div className= "d-flex flex-column align-items-center parentDiv">
-          <BrowserRouter>
+          {/* <BrowserRouter>
             <Routes>
               <Route path="/" element={Loader? <Loading/> : <Screen/>}></Route>
-              {/* <Route path="/" element={<Loading/>}></Route> */}
             </Routes>
-          </BrowserRouter>
+          </BrowserRouter> */}
+          {Loader? <Loading/> : <Screen/>}
         </div>
       </ThemeState>
 
